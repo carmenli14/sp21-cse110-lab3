@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="assets/tofu.gif">
+    <title>lab 2</title>
+</head>
+<body>
+
+    <header>
+        <h1>Lab 2</h1>
+        <h3>navigation</h3>
+        <nav>
+            <a href="/index.html">home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="entries">
+            <h2>Journal Entries</h2>
+
+            <div>
+                <details>
+                <summary>waffles</summary>
+                <p><i>i prefer waffles over pancakes</i></p>
+                <p>posted <b>today</b></p>
+
+                <img src="assets/waffles.jpeg" alt="waffles" width="300"> 
+                <br/>
+                <video src="assets/waffle.mp4" width="600" controls>
+                    Your browser does not support the video element. Kindly update it to latest version.
+                </video >
+            </details>
+            </div>
+            
+            <div>
+                <details>
+                <summary>iu</summary>
+                <p><i>my favorite song from the lilac album</i></p>
+                <p>posted <b>1 day ago</b></p>
+
+                <audio src="assets/flu.mp3" controls>
+                    Your browser does not support the audio element.    
+                </audio>
+            </details>
+            </div>
+            
+            <div>
+                <details>
+                <summary>diary</summary>
+                <p><i>things i ate today</i></p>
+                <p>posted <b>2 days ago</b></p>
+
+                <ol>
+                    <li>breakfast
+                         <ul>
+                             <li>bagel</li>
+                             <li>coffee</li>
+                         </ul>
+                    </li>
+                    <li>lunch
+                         <ul>
+                             <li>noodles</li>
+                         </ul>
+                    </li> 
+                    <li>dinner
+                        <ul>
+                            <li>rice</li>
+                            <li>broccoli</li>
+                            <li>orange chicken</li>
+                        </ul>
+                   </li> 
+                 </ol>
+                </details>
+            </div>
+
+        
+        </section>
+
+        <section>
+            <h2>Entry Form</h2>
+
+            <!-- form, fieldset, input (checkbox, radio, text, date)*, textarea, datalist, select, option, button -->
+            <form>
+                <fieldset>
+                    <label for="title">title:</label>
+                    <input type="text" name="title" id="title">
+                    <br><br>
+
+                    <label for="day">date:</label>
+                    <input type="date" id="day" name="day">
+                    <br><br>
+
+                    <input type="radio" name="posttype" id="publish">
+                    <label for="publish">publish now</label>
+                    <input type="radio" name="posttype" id="draft">
+                    <label for="draft">save as draft</label>
+                    <br><br>
+
+                    tags:
+                    <input type="checkbox" name="category" id="personal">
+                    <label for="personal">personal</label>
+                    <input type="checkbox" name="category" id="school">
+                    <label for="school">school</label>
+                    <input type="checkbox" name="category" id="random">
+                    <label for="random">random</label>
+                    <br><br>
+
+                    <label for="content">journal content:</label>
+                    <textarea rows="3" cols="30" name="content" id="content"></textarea>
+                    <br><br>
+
+                    <label for="visiblility"><em>who</em> can view this?</label>
+                    <select name="visiblility" id="visiblility">
+                        <option value="everyone">everyone</option>
+                        <option value="friends">close friends</option>
+                        <option value="me">only me</option>
+                    </select>
+                    <br><br>
+
+                    <label for="available"><em>how long</em> should this entry be available?</label>
+                    <input list="available-choices" id="available" name="available" />
+                    <datalist id="available-choices">
+                        <option value="forever">
+                        <option value="1 week">
+                        <option value="1 month">
+                    </datalist>
+                    <br><br>
+
+                    <button type="submit" value="Submit">Submit</button>
+
+                </fieldset>
+                
+            </form>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <hr/>
+        <span>made by <strong>Carmen Li</strong>.</span>
+    </footer>
+
+</body>
+</html>
