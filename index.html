@@ -6,86 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/gif" href="assets/tofu.gif">
     <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,700,900" rel="stylesheet">
     <title>lab 3</title>
 </head>
 <body>
 
     <header>
-        <h1>Lab 2</h1>
-        <h3>navigation</h3>
+        <h1>Lab 3</h1>
+        <!-- <h3>navigation</h3> -->
         <nav>
             <a href="index.html">home</a>
         </nav>
     </header>
 
     <main>
-        <section id="entries">
-            <h2>Journal Entries</h2>
+        <h2>Journal Entries</h2>
+        <section id="journal"> 
 
-            <div>
+            <div class="entry">
                 <details>
-                <summary>waffles</summary>
-                <p><i>i prefer waffles over pancakes</i></p>
-                <p>posted <b>today</b></p>
-
-                <img src="assets/waffles.jpeg" alt="waffles" width="300"> 
-                <br/>
-                <video src="assets/waffle.mp4" width="600" controls>
-                    Your browser does not support the video element. Kindly update it to latest version.
-                </video >
-            </details>
-            </div>
-            
-            <div>
-                <details>
-                <summary>iu</summary>
-                <p><i>my favorite song from the lilac album</i></p>
-                <p>posted <b>1 day ago</b></p>
-
-                <audio src="assets/flu.mp3" controls>
-                    Your browser does not support the audio element.    
-                </audio>
-            </details>
-            </div>
-            
-            <div>
-                <details>
-                <summary>diary</summary>
-                <p><i>things i ate today</i></p>
-                <p>posted <b>2 days ago</b></p>
-
-                <ol>
-                    <li>breakfast
-                         <ul>
-                             <li>bagel</li>
-                             <li>coffee</li>
-                         </ul>
-                    </li>
-                    <li>lunch
-                         <ul>
-                             <li>noodles</li>
-                         </ul>
-                    </li> 
-                    <li>dinner
-                        <ul>
-                            <li>rice</li>
-                            <li>broccoli</li>
-                            <li>orange chicken</li>
-                        </ul>
-                   </li> 
-                 </ol>
+                    <summary>today</summary>
+                    <p>i prefer waffles over pancakes</p>
+                    </br>
+                    <img src="assets/waffles.jpeg" alt="waffles" width="300"> 
+                    <br/>
+                    <video src="assets/waffle.mp4" width="600" controls>
+                        Your browser does not support the video element. Kindly update it to latest version.
+                    </video >
                 </details>
             </div>
+            
+            <div class="entry">
+                <details>
+                    <summary>1 day ago</summary>
+                    <p>my favorite song from the lilac album</p>
+                    </b>
 
+                    <audio src="assets/flu.mp3" controls>
+                        Your browser does not support the audio element.    
+                    </audio>
+                </details>
+            </div>
+            
+            <div class="entry">
+                <details>
+                    <summary>2 days ago</summary>
+                    <p>things i ate today</p>
+                    </b>
+
+                    <ol>
+                        <li>breakfast
+                            <ul>
+                                <li>bagel</li>
+                                <li>coffee</li>
+                            </ul>
+                        </li>
+                        <li>lunch
+                            <ul>
+                                <li>noodles</li>
+                            </ul>
+                        </li> 
+                        <li>dinner
+                            <ul>
+                                <li>rice</li>
+                                <li>broccoli</li>
+                                <li>orange chicken</li>
+                            </ul>
+                        </li> 
+                    </ol>
+                </details>
+            </div>
         
         </section>
 
-        <section>
-            <h2>Entry Form</h2>
+        <h2>Entry Form</h2>
+        <section id="form">
 
             <!-- form, fieldset, input (checkbox, radio, text, date)*, textarea, datalist, select, option, button -->
             <form>
                 <fieldset>
+                    <legend>Add Entry: </legend>
+                    
                     <label for="title">title:</label>
                     <input type="text" name="title" id="title">
                     <br><br>
