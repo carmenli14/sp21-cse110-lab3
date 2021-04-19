@@ -2,12 +2,12 @@
 ## Date
 
 ### Finished
-[ ] item
-[ ] item
+- [ ] item
+- [ ] item
 
 ### In Progress
-[ ] item
+- [ ] item
 
 ### To-do
-[ ] item
-[ ] item
+- [ ] item
+- [ ] item
