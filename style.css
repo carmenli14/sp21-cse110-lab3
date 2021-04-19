@@ -1,7 +1,9 @@
+/* -- universal reset -- */
 * {
     position: relative;
 }
 
+/* -- text style -- */
 body, input, select, textarea {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 10pt;
@@ -9,6 +11,7 @@ body, input, select, textarea {
     line-height: 1.5;
 }
 
+/* -- applied to entire body -- */
 body {
     background-color:rgb(242, 242, 255);
     display: grid; /* splits up header, body, footer */
@@ -26,9 +29,10 @@ body {
 }
 
 div {
-    display: block;
+    display: block; 
 }
 
+/* -- links -- */
 a {
     -moz-transition: color 0.2s ease, border-bottom 0.2s ease;
     -webkit-transition: color 0.2s ease, border-bottom 0.2s ease;
@@ -48,6 +52,7 @@ a {
         color: white;
     }
 
+/* -- titles -- */
 h1 {
     margin: 0 0 0.25em 0;
     font-size:35px;
@@ -71,24 +76,22 @@ h1, h2 {
 
 /* -- header -- */
 header {
-    grid-row-start: 1;
+    grid-row-start: 1; /* -- 1st row -- */
     padding: 5em 5em 1em 5em ;
     text-align: center;
     position: static;
-    /* background-color: rgba(221, 235, 223, 0.5); */
 }
 
 /* -- main -- */
 main {
-    grid-row-start: 2;
+    grid-row-start: 2; /* -- 2nd row -- */
 }
 
 /* -- footer -- */
 footer {
-    grid-row-start: 3;
+    grid-row-start: 3; /* -- 3rd row -- */
     padding: 5em 5em 1em 5em ;
     text-align: center;
-    /* background-color: rgba(221, 235, 223, 0.5); */
 }
 
 hr {
@@ -99,6 +102,7 @@ hr {
     border: none;
 }
 
+/* -- format each section -- */
 section {
     border-radius: 10px;
     display: flex;
@@ -135,6 +139,7 @@ nav.links {
     display: flex;
 }
 
+/* -- responsiveness to screens -- */
 @media screen and (max-width: 600px) {
     .entry {
         max-width: 400px;
@@ -179,6 +184,7 @@ form {
     padding: 1em;
 }
 
+/* -- responsiveness to screens -- */
 @media screen and (max-width: 600px) {
     form {
         max-width: 400px;
@@ -187,15 +193,17 @@ form {
 }
 
 fieldset {
-    border: none;
+    border: none; /* -- get rid of border -- */
 }
 
+/* -- selects all labels after legend -- */
 legend ~ label {
     font-weight: 500;
 }
 
+/* -- applies to input of type text -- */
 input[type=text] {
-    padding: 0.2em;
+    padding: 0.2em; 
 }
 
 /* list */
