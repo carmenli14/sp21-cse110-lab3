@@ -116,7 +116,7 @@ nav.links {
     cursor: default;
 }
 
-/* journal entries */
+/* container for journal entries */
 #journal {
     margin: auto;
     display: flex; /* splits up journal entries */
@@ -125,6 +125,7 @@ nav.links {
     align-items: center;
 }
 
+/* -- individual entry -- */
 .entry {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -147,6 +148,7 @@ nav.links {
     }
 }
 
+/* -- entry details -- */
 details {
     width: 600px;
     background-color: rgb(255, 255, 255);
@@ -192,8 +194,9 @@ form {
     }
 }
 
+/* -- group of form items -- */
 fieldset {
-    border: none; /* -- get rid of border -- */
+    border: none; 
 }
 
 /* -- selects all labels after legend -- */
